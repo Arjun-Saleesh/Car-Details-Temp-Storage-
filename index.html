@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        
+        
+        
+    }
+    .container3{
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 20px;
+       
+        
+    }
+    .container3 button{
+        width: 700px;
+        height: 30px;
+    }
+    .div1{
+        border:none; 
+        justify-content: center;
+        padding: 30px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    .container button{
+        width: 130px;
+        padding: 5px;
+        color: green;
+        background-color: white;
+        border-color: green;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: 10px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Car World</h1>
+    </div>
+    <div class="container">
+        <div class="div1 col6" >
+            <table>
+                <tr>
+                    <td>Car Brand</td>
+                </tr>
+                <tr>
+                    <td><input id="carbrand" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                </tr>
+                <tr>
+                    <td><input id="carprice" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Key</td>
+                </tr>
+                <tr>
+                    <td><input id="key" type="text"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="store()">Store Record</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div1 col3">
+            <h3>Enter key to retrive </h3>
+            <table>
+                <tr>
+                    <td>Key</td>
+                    <tr>
+                        <td><input id="sear" type="text"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><button onclick="Retrive()"  style="color: blue;border-color: blue;">Retrive Records</button></td>
+                    <div class="div" id="result">
+
+                    </div>
+                </tr>
+            </table>
+        </div>
+        <div class="div1 col3">
+            <h3>Enter Key to delete</h3>
+            <table>
+                <tr>
+                    <td>Key</td>
+                    <tr>
+                        <td><input id="remp" type="text"></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td><button onclick="remove()"  style="color: red;border-color: red;">Remove Records</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container3">
+        <button onclick="allclear()">Clear All Records</button>
+    </div>
+</body>
+<script src="./car.js"></script>
+</html>
